@@ -1,0 +1,25 @@
+{# src/Sdz/BlogBundle/Resources/views/Blog/index.html.twig #}
+
+{% extends "SdzBlogBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+{% block sdzblog_body %}
+
+  <h2>Liste des articles</h2>
+
+  <ul>
+    {% for post in Posts %}
+      <li>
+        <a href="{{ path('sdzblog_voir', {'id': post.id}) }}">{{ post.title }}</a>
+        par {{ post.text }},
+        le {{ post.created_at|date('d/m/Y') }}
+      </li>
+    {% else %}
+      <li>Pas (encore !) d'posts</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: symfony2
+    database_user: root
+    database_password: null
+    mailer_transport: gmail
+    mailer_host: null
+    mailer_user: zekraouiyoussef@gmail.com
+    mailer_password: PROROOT8
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    solr_host: 127.0.0.1
+    solr_port: 80
+    solr_path: /solr/
+    solr_core: allTest
+    solr_timeout: 90
